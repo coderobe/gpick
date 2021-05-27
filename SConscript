@@ -2,6 +2,7 @@
 # coding: utf-8
 import os, string, sys, shutil, math
 from tools import *
+import SCons.Util
 
 env = GpickEnvironment(ENV = os.environ, BUILDERS = {'WriteNsisVersion': Builder(action = WriteNsisVersion, suffix = ".nsi")})
 
